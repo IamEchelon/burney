@@ -1,0 +1,91 @@
+.navbar{
+    box-sizing: border-box;
+    min-height: 85px;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    width: 100%;
+    z-index: 20;
+    transition: 0.35s all ease;
+
+    ul {
+        list-style: none;
+        padding: 2rem;
+        transition: 0.35s all ease;
+    }
+
+    // padding: 0 30px;
+
+}
+
+nav{
+
+   h1{
+       margin: 0;
+   }
+
+   a,li{
+       list-style: none;
+       text-decoration: none;
+       color: white;
+       margin: 0 .5em;
+   }
+}
+
+.scrolled {
+  min-height: 10px;
+  background: $offblack;
+  transition: 0.35s all ease;
+  // border-bottom: 4px solid black;
+  // box-shadow: 10px 10px 5px black;
+  ul {
+    padding: 0.5rem;
+    transition: 0.35s all ease;
+  }
+
+}
+
+// link highlight animation
+
+.wrapper{
+    display:block;
+}
+
+.nav-wrapper li{
+    position: relative;
+    display: inline-block;
+
+}
+
+.topBotomBordersOut{
+    display: block;
+    padding: .25em;
+}
+
+/* Top and Bottom borders go out */
+.topBotomBordersOut:before, .topBotomBordersOut:after{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.topBotomBordersOut:before{
+    top: 0px;
+    transform: translateY(10px);
+}
+
+.topBotomBordersOut:after{
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+.topBotomBordersOut:hover:before, .topBotomBordersOut:hover:after{
+    opacity: 1;
+    transform: translateY(0px);
+}

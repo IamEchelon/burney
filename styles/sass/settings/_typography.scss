@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400|Shrikhand');
+
+h1,li{
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: $black;
+    text-transform: uppercase;
+}
+
+h2{
+
+}
+
+h3{
+    color: $black
+}
+
+p{
+    font-family: "Open Sans"
+}
+
+blockquote{
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.7em;
+    color: $black
+}

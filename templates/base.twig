@@ -1,0 +1,61 @@
+{#
+|--------------------------------------------------------------------------
+| Primary layout page for our project. 
+|--------------------------------------------------------------------------
+#}
+
+<html>
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js ie ie6 lt-ie9 lt-ie8 lt-ie7" {{site.language_attributes}}> <![endif]-->
+<!--[if IE 7]><html class="no-js ie ie7 lt-ie9 lt-ie8" {{site.language_attributes}}> <![endif]-->
+<!--[if IE 8]><html class="no-js ie ie8 lt-ie9" {{site.language_attributes}}> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" {{site.language_attributes}}> <!--<![endif]-->
+<head>
+    {% block head %}
+        {% include "partials/head.twig" %}
+    {% endblock head %}
+</head>
+
+<body>
+
+{#
+|--------------------------------------------------------------------------
+| Header
+|--------------------------------------------------------------------------
+#}
+    {% block header %}
+        {% include "partials/navbar.twig" %}
+    {% endblock header %}
+
+{#
+|--------------------------------------------------------------------------
+| Page Content 
+|--------------------------------------------------------------------------
+#}
+
+    {% block content %}
+        <h1>Loaded!</h1>
+    {% endblock content %}
+
+{#
+|--------------------------------------------------------------------------
+| Footer
+|--------------------------------------------------------------------------
+#}
+
+    {% block footer %}
+        {% include "partials/footer.twig" %}
+    {% endblock footer %}
+
+{#
+|--------------------------------------------------------------------------
+| Scripts
+|--------------------------------------------------------------------------
+#}
+    {% block scripts %}
+        {% include "partials/scripts.twig" %}
+    {% endblock scripts %}
+
+</body>
+
+</html>

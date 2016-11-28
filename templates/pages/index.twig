@@ -1,0 +1,11 @@
+{% extends "base.twig" %}
+
+{% block content %}
+    
+	<h2>Rendering From The Index Page</h2>
+	<p>Hello from gulp js</p>
+	{% for post in posts %}
+		<h2><a href="{{post.link}}">{{post.title}}</a></h2>
+		<p>{{post.get_preview}}</p>
+	{% endfor %}
+{% endblock %}

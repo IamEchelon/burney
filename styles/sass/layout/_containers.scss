@@ -1,0 +1,30 @@
+/*
+|--------------------------------------------------------------------------
+| Containers
+|--------------------------------------------------------------------------
+*/
+
+.container{
+    margin: auto;
+    max-width: 80%;
+}
+
+.half-width{
+    margin: auto;
+    max-width: 60%;
+}
+
+.fill-view{
+    margin: auto;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.max-height{
+    height: 100vh;
+}
+
+.max-width{
+    width: 100vw;
+}

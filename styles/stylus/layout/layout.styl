@@ -1,0 +1,89 @@
+/*
+—————————————————————————————————————————————————————————————————————————
+ Elements
+—————————————————————————————————————————————————————————————————————————
+*/
+
+section
+    // padding-top: 2em
+    // padding-bottom: 4em
+footer
+    // clear: both
+
+/*
+—————————————————————————————————————————————————————————————————————————
+ Classes
+—————————————————————————————————————————————————————————————————————————
+*/
+
+.latest
+    // clearfix()
+    // pad($top: 32, $bottom: 100)
+    marg($bottom:100)
+    clearfix()
+
+
+.music-player
+    column(1/2)
+    clear: both
+
+
+.news
+    column(1/2)
+    h3,p
+        container(80%)
+        padding: .8em 0;
+
+.events
+    clear both
+
+
+.media
+    parallax("../../../assets/test.jpg")
+    clearfix()
+
+.gallery
+    cotainer()
+
+    .pic-thumbs
+        flex($direction: row, $flexWrap: wrap)
+    img
+        padAll(20)
+
+
+.video
+    clearfix()
+    clear both
+    flex($direction: column, $justify: center)
+    pad($top: 32, $bottom: 40)
+
+
+
+    iframe
+        // container(90%)
+        clear: both;
+
+.quotes
+    parallax("../../../assets/maninblack.jpg")
+    clearfix()
+    background-size: cover
+
+    min-width: 100vw
+    clear: both
+    position: relative;
+
+    h3
+        color: white
+        pad($right:50)
+
+.quote
+    position: absolute;
+
+    bottom: 0;
+    max-width: 30%
+    pad($bottom: 20, $left: 40)
+    left: 0;
+
+    &:nth-child(2){ left: 33%; }
+    &:nth-child(3){ left: 66%; }
+    // clearfix()
